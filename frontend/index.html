@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HermosoWeb | Premium Website Development Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <nav class="navbar">
+        <div class="logo">Hermoso<span>Web</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact" class="btn-nav">Get Started</a></li>
+        </ul>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">#1 Affordable Web Agency</span>
+                <h1>Crafting Digital <br><span class="gradient-text">Masterpieces</span></h1>
+                <p>Ab har business banega digital. High-performance, SEO-friendly, and stunning websites starting from just ₹1499.</p>
+                <div class="hero-btns">
+                    <a href="#pricing" class="btn-primary">View Packages</a>
+                    <a href="#portfolio" class="btn-secondary">Our Work</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <section class="stats-section">
+        <div class="stat-item">
+            <h2>500+</h2>
+            <p>Projects Delivered</p>
+        </div>
+        <div class="stat-item">
+            <h2>150+</h2>
+            <p>Happy Clients</p>
+        </div>
+        <div class="stat-item">
+            <h2>24/7</h2>
+            <p>Support</p>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="section-title">
+            <h2>Our specialized <span>Services</span></h2>
+            <p>We don't just build websites; we build business tools.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>MERN Stack, WordPress, and Custom HTML/CSS solutions.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-rocket"></i>
+                <h3>SEO Optimization</h3>
+                <p>Rank your business on the first page of Google.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-robot"></i>
+                <h3>AI Integration</h3>
+                <p>Automate your sales with Agentic AI and Chatbots.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+        <div class="section-title">
+            <h2>Choose Your <span>Plan</span></h2>
+        </div>
+        <div class="pricing-wrapper">
+            <div class="price-card">
+                <div class="card-header">
+                    <h3>Starter</h3>
+                    <div class="price">₹1,499</div>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Single Page Design</li>
+                    <li><i class="fas fa-check"></i> Mobile Responsive</li>
+                    <li><i class="fas fa-check"></i> SSL Certificate</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Custom Domain</li>
+                </ul>
+                <button class="btn-price">Get Started</button>
+            </div>
+            <div class="price-card popular">
+                <div class="popular-tag">Most Recommended</div>
+                <div class="card-header">
+                    <h3>Business</h3>
+                    <div class="price">₹3,499</div>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> 5 Premium Pages</li>
+                    <li><i class="fas fa-check"></i> SEO Ready</li>
+                    <li><i class="fas fa-check"></i> WhatsApp Chat</li>
+                    <li><i class="fas fa-check"></i> 1 Year Support</li>
+                </ul>
+                <button class="btn-price featured">Buy Business</button>
+            </div>
+            <div class="price-card">
+                <div class="card-header">
+                    <h3>Enterprise</h3>
+                    <div class="price">₹8,999+</div>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Unlimited Pages</li>
+                    <li><i class="fas fa-check"></i> Payment Gateway</li>
+                    <li><i class="fas fa-check"></i> Agentic AI Bot</li>
+                    <li><i class="fas fa-check"></i> Admin Dashboard</li>
+                </ul>
+                <button class="btn-price">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <div class="why-content">
+            <h2>Why Choose <span>HermosoWeb?</span></h2>
+            <p>Hum sirf design nahi karte, hum results dete hain.</p>
+            <div class="benefits">
+                <div class="benefit"><i class="fas fa-bolt"></i> Fast Delivery (3-5 Days)</div>
+                <div class="benefit"><i class="fas fa-shield-alt"></i> Secure & Safe</div>
+                <div class="benefit"><i class="fas fa-headset"></i> Dedicated Manager</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ai-chat-launcher" onclick="toggleChat()">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <div class="chat-container" id="chatBox">
+        <div class="chat-header">
+            <h4>Hermoso AI Assistant</h4>
+            <span onclick="toggleChat()">&times;</span>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="bot-msg">Hi! Main HermosoWeb ka AI Agent hoon. Kya main aapki website choose karne me help karun?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="aiInput" placeholder="Write a message...">
+            <button onclick="handleChat()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Build Your <br><span>Digital Identity</span></h2>
+                    <p>Form bhariye aur hamari team 24 ghante ke andar aapse connect karegi.</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>support@hermosoweb.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                </div>
+    
+                <div class="contact-form-container">
+                    <form id="orderForm">
+                        <div class="input-group">
+                            <input type="text" id="name" required placeholder="Full Name">
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required placeholder="Email Address">
+                        </div>
+                        <div class="input-group">
+                            <select id="plan" required>
+                                <option value="" disabled selected>Select Your Plan</option>
+                                <option value="starter">Starter - ₹1,499</option>
+                                <option value="business">Business - ₹3,499</option>
+                                <option value="enterprise">Enterprise - ₹8,999+</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="4" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Inquiry <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2025 HermosoWeb. Built for the Future.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
